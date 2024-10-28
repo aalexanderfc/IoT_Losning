@@ -24,7 +24,7 @@ public class SensorData {
         this.id = id;
     }
 
-    // Getter och Setter för temperature
+    // Getter och Setter for temperature
     public double getTemperature() {
         return temperature;
     }

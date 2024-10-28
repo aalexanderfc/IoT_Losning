@@ -1,4 +1,6 @@
 /home/alexanderfc/sensor-data/src/main/java/com/example/SensorDataController.java
 /home/alexanderfc/sensor-data/src/main/java/com/example/SensorData.java
+/home/alexanderfc/sensor-data/src/main/java/com/example/SensorDataHistoryRepository.java
+/home/alexanderfc/sensor-data/src/main/java/com/example/SensorDataHistory.java
 /home/alexanderfc/sensor-data/src/main/java/com/example/SensorDataRepository.java
 /home/alexanderfc/sensor-data/src/main/java/com/example/App.java
