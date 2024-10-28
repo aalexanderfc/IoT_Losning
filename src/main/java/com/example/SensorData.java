@@ -12,10 +12,10 @@ public class SensorData {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private int sensorId;  // L�gg till detta f�lt om det beh�vs
     private double temperature;
     private double humidity;
 
-    // Getter och Setter för id
     public Long getId() {
         return id;
     }
@@ -24,7 +24,14 @@ public class SensorData {
         this.id = id;
     }
 
-    // Getter och Setter for temperature
+    public int getSensorId() {   // Ny getter f�r sensorId
+        return sensorId;
+    }
+
+    public void setSensorId(int sensorId) {
+        this.sensorId = sensorId;
+    }
+
     public double getTemperature() {
         return temperature;
     }
@@ -33,7 +40,6 @@ public class SensorData {
         this.temperature = temperature;
     }
 
-    // Getter och Setter för humidity
     public double getHumidity() {
         return humidity;
     }

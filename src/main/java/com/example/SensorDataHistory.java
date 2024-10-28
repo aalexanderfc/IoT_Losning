@@ -1,6 +1,7 @@
 package com.example;
 
 import java.sql.Timestamp;
+import java.time.Instant;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,11 +18,16 @@ public class SensorDataHistory {
     private int id;
 
     private int sensorId;
-    private float temperature;
-    private float humidity;
+    private double temperature;  // �ndra till double
+    private double humidity;     // �ndra till double
     private Timestamp timestamp;
 
-    // Getters och Setters for varje falt
+    // Konstruktor som automatiskt s�tter timestamp
+    public SensorDataHistory() {
+        this.timestamp = Timestamp.from(Instant.now());
+    }
+
+    // Getters och Setters
     public int getSensorId() {
         return sensorId;
     }
@@ -30,19 +36,19 @@ public class SensorDataHistory {
         this.sensorId = sensorId;
     }
 
-    public float getTemperature() {
+    public double getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(float temperature) {
+    public void setTemperature(double temperature) {
         this.temperature = temperature;
     }
 
-    public float getHumidity() {
+    public double getHumidity() {
         return humidity;
     }
 
-    public void setHumidity(float humidity) {
+    public void setHumidity(double humidity) {
         this.humidity = humidity;
     }
 
